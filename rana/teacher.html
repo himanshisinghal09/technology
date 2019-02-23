@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teacher</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			text-transform: capitalize;
+		}
+		.cont{
+			width:100%;
+			border:1px solid black;
+			
+			background-image: url(teacher.png);
+			background-size: cover;
+			height:600px;
+			margin:0;
+			position: relative;
+		}
+		h1{
+			    font-family: Roboto,Arial,sans-serif;
+		}
+		.image img{
+			float:left;
+			height: 100px;
+			width:100px;
+			margin:5px 5px 5px 5px;
+			border:1px solid black;
+			border-radius: 45px;
+		}
+		.text{
+            color:white;
+            background: rgba(0,0,0,0.7);
+            height: 100%; 
+            padding: 10px;
+            font-size:0.5em;
+            text-shadow: 2px 2px 3px black;
+
+           
+		}
+		.text table{
+			padding:5px;
+		}
+		 th, td{
+			text-align: left;
+		}
+		#about{
+			font-size: 2.0em;
+
+		}
+		.bottom{ width:100%;
+			height:100px;
+			 position: absolute;
+			 padding: 10px;
+			 display:block;
+    bottom: 0;
+    left: 0;
+		}
+		#contact{
+			padding:10px;
+			color:#fff6f6;
+			background-color:#2853ec;
+			border:1px solid #000000;
+			border-radius: 10px;
+			display: inline-block;
+			box-shadow: 4px 4px 4px black;
+			font-weight: bold;
+			letter-spacing: 0.1em;
+			margin-top: 2px;
+			text-shadow: 2px 5px 7px  black;
+		}
+		#contact:hover{
+           background-color: #fff6f6;
+           color: #2853ec;
+		}
+		#conc{
+			color: white;
+			float: right;
+			width:50%;
+			text-align: right;
+			visibility: hidden;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="cont">
+		<!-- THIS DIVISION GIVE A BASIC INFRASTRUCTURE TO THE WHOLE SECTION WHICH CONTAIN INFORMATION ABOUT THE TEACHER AND OTHER CREDENTTIALS -->
+		<div class="text">
+			<!-- THIS DIVISION CONTAINS THE ORIGINAL INFO WHICH CONTAINS THE IMAGE , INFORMATION,CONTACT ABOUT ETC OF THE TEACHER -->
+			<div class="image">
+				<!-- THIS DIVISION CONTAINS THE ROUND PICTURE OF THE TEACHER -->
+				<img src="teach.jpg"> 
+            </div>
+           <h1> prof. g.k goswami<h1>
+          <table>
+          	<!-- THIS TABLE CONATINS THE BASIC INFO IN TABULAR FORM IN THE WEBPAGE INLINE WITH THE ROUND PICTURE OF TEACHER -->
+          	<tr>
+          		<th width="20%">qualification</th>
+          		<th width="20%">phd in data science</th>
+          	</tr>
+          	<tr>
+          		<td>region</td>
+          		<td>chandigarh</td>
+          	</tr>
+          	<tr>
+          		<td>uni/college</td>
+          		<td>panjab university</td>
+          	</tr>
+          	<tr>
+          		<td>specializations</td>
+          		<td>data science and minning</td>
+          	</tr>
+          </table>
+          <h2>about</h2>
+          <hr>
+          <!-- THIS PARA CONTAINS THE ABOUT OF A TEACHER INCLUDED IN THE MIDDLE SECTION OF TEXT DIVISION -->
+          <p id="about">Areas of academic Interest include: 1. DNA Profiling in administration of justice 2. Assisted Reproduction and complexities in parentage determination 3. Fair Investigation as precursor of fair trial: A gateway to internal police reforms 4. Castration Laws: Marching towards imperfect justice 5. Forensic law: A tool for strengthening veracity of oral testimony</p></div>
+ <div class="bottom">  
+ <hr> 
+      <!--THE DIVISION CONTAINS THE LOWER SECTION OF TEACHER INFO WHICH INCLUDES THE CONTACT OF TEACHER ANIMATED WITH THE FUNCTION SHOWMASK()  -->
+<button id="contact" onclick="showMask();"> contact</button>
+<!-- THIS DIVIDION CONTAINS THE CONTACT BUTTON ONLY -->
+<div id="conc">
+<!-- THIS DIVISION CONTAINS THE MOBILE AND EMAIL FLOATED TO THE RIGHT BOTTOM OF TEACHER INFO SECTION -->
+mobile no.:7973048336<br> email:axelakhil@gmail.com</div>
+		</div>
+	</div>
+
+
+<!-- FUNCTION APPLIED ON THE BOTTOM DIVISION(CONTACT BUTTON) -->
+<script type="text/javascript">
+function showMask() {
+    var node = document.getElementById('conc');
+    if (node.style.visibility=='visible') {
+        node.style.visibility = 'hidden';
+    }
+    else
+        node.style.visibility = 'visible'
+}
+</script>
+</body>
+</html>

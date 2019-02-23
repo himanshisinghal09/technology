@@ -1,0 +1,112 @@
+
+<html>
+<head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+ 
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>OUR FACULTIES</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<!-- this id depicts the input box which is embedded with a function which is responsible for filter of teachers data -->
+
+<table id="myTable">
+  <!-- table containing the information about the teacher assigned and engaged with tec -->
+  <tr class="header">
+    <!-- this class contains the headings of the teacher table -->
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Expertise</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>app development</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbkop</td>
+    <td>web development</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>machine learning</td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>artifical intelligence</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Cyber security</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>data mining</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>digital marketing</td>
+  </tr>
+  <tr>
+    <td>Paris specialites</td>
+    <td>algorithm</td>
+  </tr>
+</table>
+<!-- function named myFunction which filter the teacher data as their name as key -->
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
