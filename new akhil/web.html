@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" type="text/css" href="boot.css">
+<link rel="stylesheet" type="text/css" href="a.css">
+    <title>webfront</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+	font-family: 'Poppins',sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+</style>
+</head>
+
+<body>
+ 
+
+    <!-- navbar   #########################################################-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light " style="border-bottom:1px solid black;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                	<!-- nav items hone about contact industry startups progress etc -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                     <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Progress</a>
+                    <div class="dropdown-menu ">
+                        <a href="#" class="dropdown-item">year 1</a>
+                        <a href="#" class="dropdown-item">year 2</a>
+                        <a href="#" class="dropdown-item">year 3</a>
+                    </div>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Industry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#two">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+<!-- slider#######################################################################################3 -->
+<section>
+
+<div class="bd-example carousel-fade">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style="max-height: 400px;">
+      <div class="carousel-item active">
+      	<!-- division containing the img and the the image caption click button -->
+        <img src="pic04.jpg" class="d-block w-100" alt="..." style="height:400px;">
+        <div class="carousel-caption d-md-block " style="top:100px;">
+        <h5 style="font-size:90px;" class="d-md-block d-none">Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <!-- division including the click me button -->
+            <div style="position: absolute;right:10%;">   <a href="www.google.com" class="btn" style="width:200%;color: white; background-color: transparent;border:1px solid white;">click me</a></div>
+        </div>
+       
+      </div>
+      <div class="carousel-item">
+      	<!-- division containing the img and the the image caption click button -->
+        <img src="pic02.jpg" class="d-block w-100" alt="..." style="height:400px;">
+         <div class="carousel-caption d-md-block " style="top:100px;">
+        <h5 style="font-size:90px;" class="d-md-block d-none">Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <!-- division including the click me button -->
+            <div style="position: absolute;right:10%;">   <a href="www.google.com" class="btn" style="width:200%;color: white; background-color: transparent;border:1px solid white;">click me</a></div>
+        </div>
+      
+      </div>
+      <div class="carousel-item">
+      	<!-- division containing the img and the the image caption click button -->
+        <img src="pic04.jpg" class="d-block w-100" alt="..."style="height:400px;">
+          <div class="carousel-caption d-md-block " style="top:100px;">
+        <h5 style="font-size:90px;" class="d-md-block d-none">Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <!-- division including the click me button -->
+            <div style="position: absolute;right:10%;">   <a href="www.google.com" class="btn" style="width:200%;color: white; background-color: transparent;border:1px solid white;">click me</a></div>
+        </div>
+        
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</section>
+
+
+
+
+
+<!-- about and news notification section##################################################################################3 -->
+
+<!-- class alpha conatins the whole section with full width               -->
+<div class="alpha" style="width:100%;min-height: 400px; display: flex; max-height: 400px; border-bottom:1px solid black;">
+	<!-- class bravo contains the 2/3 about column -->
+	<div class="bravo" style="width:75%;padding: 40px;
+	padding-top: 0px; max-height: 400px;overflow-y: scroll;overflow-x: hidden;
+background-color: #f8f9fa;">
+			<h1>ABOUT</h1>
+			<HR>
+	<p>
+Over a period of time, a rapid expansion is observed in R&D output of the country in
+terms of publications, IP, research translation and technology commercialization etc.
+These outcomes are playing an important role in the country's economic
+development as evidenced by various rankings and performance matrices.
+Academia is the prime resource in any country for generating new knowledge and
+converting it into wealth. The effective institutional mechanisms are largely missing in
+academia to translate R&D output into technological wealth which has become very
+pertinent in the current scenario.
+TDT Division has been implementing Technology related programmes since
+inception of DST. The success in terms of indigenous technology development has
+been satisfactory but the contribution from University system can be optimized. We
+have deliberated many a times on institutionalizing industry academia interaction,
+wherein enabling ecosystem has always emerged as point of concern.
+The objective of TEC will be to create an Ecosystem for Technology Development in
+the Universities and provide a platform to network researchers with other institutes,
+National laboratories and industry. The focus of Centres will be on providing an
+enabling eco system, process and support system. </p>
+<p>
+
+
+</div>
+
+<!-- class charlie includes the news and notifivcation column   -->
+<div class="charlie" style="width:25%;padding:0px;float:right; overflow: hidden;max-height:400px; ">
+	<h3 style="text-transform: uppercase; font-size: 1.3em">news and notifications</h3>
+	<!-- division responsible dfor the marqueee effecr************** -->
+<div id="marquee1" class="scroller" onmouseover="zxcMarquee.scroll('marquee1',0);" onmouseout="zxcMarquee.scroll('marquee1',-1);" style="width:auto; height:500px; border:none;background-color: #f8f9fa;">
+<div style="position: absolute; width: 98%;">
+
+<p style="margin-top: 0; "><b><a href="http://www.dynamicdrive.com/dynamicindex17/indexb.html">Iframe &amp;
+Ajax category added</a></b><br>
+The Dynamic Content category has just been branched out with a new
+<a href="http://www.dynamicdrive.com/dynamicindex17/indexb.html">sub category</a>
+to better organize its scripts.</p>
+<p><b><a href="http://tools.dynamicdrive.com/gradient/">Gradient Image Maker</a></b><br>
+We're excited to introduce our latest web tool- Gradient Image Maker!</p>
+<p><b><a href="http://www.dynamicdrive.com/dynamicindex17/indexb.html">Iframe &amp;
+Ajax category added</a></b><br>
+The Dynamic Content category has just been branched out with a new
+<a href="http://www.dynamicdrive.com/dynamicindex17/indexb.html">sub category</a>
+to better organize its scripts.</p>
+<p><b><a href="http://tools.dynamicdrive.com/gradient/">Gradient Image Maker</a></b><br>
+We're excited to introduce our latest web tool- Gradient Image Maker!</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- contact us########################################################################################################333 -->
+
+
+	<section id="two" class="wrapper style3" style="height:200px;">
+				<div class="inner align-center">
+						<h2 ><a href="www.google.com" style="text-decoration: blink; ">CONTACT US</a></h2>
+						<hr style="width:50%;color:white;border:1px solid white; padding-top: 0px;">
+				</div>
+			</section>
+
+
+
+</body>
+<script type="text/javascript" src="a.js"></script>
+<script type="text/javascript" src="slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+          <script type="text/javascript" src="slider.js"></script>
+</body>
+
+</html>
